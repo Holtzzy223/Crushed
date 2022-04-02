@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PeepleManager : MonoBehaviour
 {
+    public int maxPeeple = 10;
+    public int peepleCount = 0;
     public GameObject peeplePre;
     // Start is called before the first frame update
     void Start()
@@ -19,17 +22,27 @@ public class PeepleManager : MonoBehaviour
         {
             AddPeeple();
         }
+        
     }
     void AddPeeple()
     {
-        //create a new peeple
-        GameObject newPeeple = Instantiate(peeplePre);
-        //get mouse position
-        Vector3 mousePos = Input.mousePosition;
-        //convert mouse position to world position
-        mousePos.z = 10;
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-        //set new peeple position
-        newPeeple.transform.position = worldPos;
+        if (peepleCount < maxPeeple)
+        {
+            //create a new peeple
+            GameObject newPeeple = Instantiate(peeplePre);
+            //get mouse position
+            Vector3 mousePos = Input.mousePosition;
+            //convert mouse position to world position
+            mousePos.z = 10;
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+            //set new peeple position
+            newPeeple.transform.position = worldPos;
+            peepleCount++;
+        }
+    }
+
+    public void RemovePeeple()
+    {
+        peepleCount--;
     }
 }

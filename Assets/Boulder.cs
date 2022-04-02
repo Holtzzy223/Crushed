@@ -18,7 +18,7 @@ public class Boulder : MonoBehaviour
     {
         
     }
-    void Grow() 
+    public void Grow() 
     {
         //do scale
         transform.DOScale(transform.localScale*scaleMod, growTime);
@@ -26,9 +26,5 @@ public class Boulder : MonoBehaviour
         rb.mass = rb.mass * scaleMod;
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("peeple"))
-            Grow();
-    }
+ 
 }
