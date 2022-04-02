@@ -18,9 +18,15 @@ public class Boulder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.localScale.x > 1.5f)
+        if (transform.localScale.x >= 1.35f && transform.localScale.x <= 2f)
         {
-            FindObjectOfType<CameraManager>().ZoomVirtualCam(1 + transform.localScale.x / 10f);
+            FindObjectOfType<CameraManager>().ZoomVirtualCam(1 + transform.localScale.x / 2);
+        } else if (transform.localScale.x >= 2 && transform.localScale.x <= 3f)
+        {
+            FindObjectOfType<CameraManager>().ZoomVirtualCam(1 + transform.localScale.x / 2);
+        } else if (transform.localScale.x>=3 && transform.localScale.x <= 4f) 
+        {
+            FindObjectOfType<CameraManager>().ZoomVirtualCam(1 + transform.localScale.x / 2);
         }
     }
     public void Grow() 
