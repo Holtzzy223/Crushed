@@ -28,11 +28,9 @@ public class PeepleManager : MonoBehaviour
     {
         if (peepleCount < maxPeeple)
         {
-            //create a new peeple
+             //create a new peeple
             GameObject newPeeple = Instantiate(peeplePre);
-            //get mouse position
             Vector3 mousePos = Input.mousePosition;
-            //convert mouse position to world position
             mousePos.z = 10;
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
             //set new peeple position
