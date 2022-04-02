@@ -21,7 +21,7 @@ public class Boulder : MonoBehaviour
     void Grow() 
     {
         //do scale
-        transform.DOScale(scaleMod, growTime);
+        transform.DOScale(transform.localScale*scaleMod, growTime);
         //scale rigidbody mass
         rb.mass = rb.mass * scaleMod;
         
