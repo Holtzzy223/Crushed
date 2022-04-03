@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class PeepleManager : MonoBehaviour
 {
-    public int maxPeeple = 10;
-    public int peepleCount = 0;
-    public GameObject peeplePre;
-    public GameObject bigBoyPre;
+    [SerializeField]private int maxPeeple = 10;
+    [SerializeField]private int peepleCount = 0;
+    [SerializeField]private GameObject peeplePre;
+    [SerializeField]private GameObject bigBoyPre;
+    [SerializeField]private int peepleCost = 2;
+    [SerializeField]private int bigBoyCost = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +24,22 @@ public class PeepleManager : MonoBehaviour
         //check if mouse button clicked
         if (Input.GetMouseButtonDown(0))
         {
-            AddPeeple(peeplePre);
+            if (SoulManager.instance.SoulCount >= peepleCost)
+            {
+                AddPeeple(peeplePre, peepleCost);
+            }
         }
         //check right mouse
         if (Input.GetMouseButtonDown(1))
         {
-            AddPeeple(bigBoyPre);
+            if (SoulManager.instance.SoulCount >= bigBoyCost)
+            {
+                AddPeeple(bigBoyPre, bigBoyCost);
+            }
         }
 
     }
-    void AddPeeple(GameObject prefab)
+    void AddPeeple(GameObject prefab,int cost)
     {
         if (peepleCount < maxPeeple)
         {
@@ -42,6 +51,7 @@ public class PeepleManager : MonoBehaviour
             //set new peeple position
             newPeeple.transform.position = worldPos;
             peepleCount++;
+            SoulManager.instance.RemoveSoul(cost);
         }
     }
 
