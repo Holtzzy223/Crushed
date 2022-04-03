@@ -12,10 +12,13 @@ public class CameraManager : MonoBehaviour
     public GameObject townTarget;
     public GameObject boulderTarget;
 
-    // Start is called before the first frame update
+    void Awake() 
+    {
+        vCam.m_Lens.OrthographicSize = 0f;
+    }
     void Start()
     {
-        vCam.m_Lens.OrthographicSize = 1;
+       
         StartCoroutine(TargetTown(1f));
     }
 
@@ -26,12 +29,15 @@ public class CameraManager : MonoBehaviour
     }
     public void ZoomVirtualCam(float zoomSize)
     {
-        vCam.m_Lens.OrthographicSize = Mathf.Lerp(vCam.m_Lens.OrthographicSize,zoomSize, Time.deltaTime * 2);
+        vCam.m_Lens.OrthographicSize = Mathf.Lerp(vCam.m_Lens.OrthographicSize,zoomSize, Time.deltaTime);
     }
     private IEnumerator TargetTown(float wait)
     {
-        vCam.Follow = townTarget.transform;
-        vCam.LookAt = townTarget.transform;
+        if (vCam.Follow == null)
+        {
+            vCam.Follow = townTarget.transform;
+            vCam.LookAt = townTarget.transform;
+        }
         while (vCam.m_Lens.OrthographicSize < 3.2f)
         {
             ZoomVirtualCam(3.3f);

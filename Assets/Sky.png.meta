@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: 7eefc6c63c46fb44b8c12426e3bd5951
+guid: 03b76fda76ddc424d87bd10fd933f298
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8118189200590125182
-    second: peeple_0
-  - first:
-      213: 945141788407419588
-    second: peeple_1
-  - first:
-      213: -2524129400279493232
-    second: peeple_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,13 +41,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
-  spriteBorder: {x: 80, y: 353, z: 980, w: 205}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -146,70 +137,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: peeple_0
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 383
-        width: 269
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e783690e01a99a070800000000000000
-      internalID: 8118189200590125182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: peeple_1
-      rect:
-        serializedVersion: 2
-        x: 409
-        y: 383
-        width: 226
-        height: 410
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c2d660f271dd1d00800000000000000
-      internalID: 945141788407419588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: peeple_2
-      rect:
-        serializedVersion: 2
-        x: 683
-        y: 383
-        width: 240
-        height: 468
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09598311fad78fcd0800000000000000
-      internalID: -2524129400279493232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
