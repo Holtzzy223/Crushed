@@ -14,7 +14,7 @@ public class CameraManager : MonoBehaviour
 
     void Awake() 
     {
-        vCam.m_Lens.OrthographicSize = 0f;
+        vCam.m_Lens.OrthographicSize = 1f;
     }
     void Start()
     {
@@ -38,9 +38,9 @@ public class CameraManager : MonoBehaviour
             vCam.Follow = townTarget.transform;
             vCam.LookAt = townTarget.transform;
         }
-        while (vCam.m_Lens.OrthographicSize < 3.2f)
+        while (vCam.m_Lens.OrthographicSize < 2.2f)
         {
-            ZoomVirtualCam(3.3f);
+            ZoomVirtualCam(2.3f);
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(wait);
