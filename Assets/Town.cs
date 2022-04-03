@@ -14,8 +14,7 @@ public class Town : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.DOScale(new Vector3(2f * Mathf.Sin(transform.localScale.x), 2f * Mathf.Sin(transform.localScale.y)), 1f);
-
+   
     }
     //check trigger for boulder
     private void OnTriggerEnter(Collider other)
