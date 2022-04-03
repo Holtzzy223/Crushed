@@ -11,6 +11,7 @@ public class CameraManager : MonoBehaviour
     public CinemachineVirtualCamera vCam;
     public GameObject townTarget;
     public GameObject boulderTarget;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,10 +32,10 @@ public class CameraManager : MonoBehaviour
     {
         vCam.Follow = townTarget.transform;
         vCam.LookAt = townTarget.transform;
-        while (vCam.m_Lens.OrthographicSize < 2f)
+        while (vCam.m_Lens.OrthographicSize < 3.2f)
         {
-            ZoomVirtualCam(2.2f);
-            yield return new WaitForSeconds(0.01f);
+            ZoomVirtualCam(3.3f);
+            yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(wait);
         StartCoroutine(TargetBoulder());
@@ -48,6 +49,12 @@ public class CameraManager : MonoBehaviour
         yield return new WaitForSeconds(10f);
         vCam.Follow = boulderTarget.transform;
         vCam.LookAt = boulderTarget.transform;
+        yield return new WaitForSeconds(1f);
+        while (vCam.m_Lens.OrthographicSize > 1f)
+        {
+            ZoomVirtualCam(0.99f);
+            yield return new WaitForEndOfFrame();
+        }
         boulderTarget.GetComponent<Boulder>().StartBoulder();
     }
 }
