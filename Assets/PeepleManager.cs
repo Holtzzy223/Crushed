@@ -8,6 +8,7 @@ public class PeepleManager : MonoBehaviour
     public int maxPeeple = 10;
     public int peepleCount = 0;
     public GameObject peeplePre;
+    public GameObject bigBoyPre;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +21,21 @@ public class PeepleManager : MonoBehaviour
         //check if mouse button clicked
         if (Input.GetMouseButtonDown(0))
         {
-            AddPeeple();
+            AddPeeple(peeplePre);
         }
-        
+        //check right mouse
+        if (Input.GetMouseButtonDown(1))
+        {
+            AddPeeple(bigBoyPre);
+        }
+
     }
-    void AddPeeple()
+    void AddPeeple(GameObject prefab)
     {
         if (peepleCount < maxPeeple)
         {
              //create a new peeple
-            GameObject newPeeple = Instantiate(peeplePre);
+            GameObject newPeeple = Instantiate(prefab);
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 10;
             Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
