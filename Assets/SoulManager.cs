@@ -10,7 +10,7 @@ public class SoulManager : MonoBehaviour
     private int soulCount = 30;
     private int maxSoulCount = 100;
     public int SoulCount { get { return soulCount; } set { soulCount = value; } }
-    public int MaxSoulCount { get { return maxSoulCount; } }      
+    public int MaxSoulCount { get { return maxSoulCount; } set { soulCount = value; } }      
     private void Awake()
     {
         if (instance == null)
@@ -46,7 +46,7 @@ public class SoulManager : MonoBehaviour
     //remove souls
     public void RemoveSoul(int amount)
     {
-        soulCount -= amount;
+        SoulCount -= amount;
         if (soulCount < 0)
         {
             soulCount = 0;

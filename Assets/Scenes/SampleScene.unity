@@ -668,14 +668,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678499799}
   serializedVersion: 2
-  m_Mass: 20
+  m_Mass: 60
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &678499805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,8 +1090,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.0968995, y: 1, z: 3.6315637}
-  m_Center: {x: -0.09774895, y: -0.000062778476, z: 0.4611788}
+  m_Size: {x: 8.027051, y: 17.309566, z: 3.6315637}
+  m_Center: {x: -0.2656416, y: -8.154847, z: 0.46117875}
 --- !u!23 &1512103570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1446,7 +1446,7 @@ Camera:
   far clip plane: 1000
   field of view: 30
   orthographic: 1
-  orthographic size: 0.9999729
+  orthographic size: 0.999865
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1664,7 +1664,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1065685256}
   m_Lens:
     FieldOfView: 30
-    OrthographicSize: 0.9999729
+    OrthographicSize: 0.999865
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
