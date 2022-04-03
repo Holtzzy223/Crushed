@@ -78,6 +78,12 @@ public class Boulder : MonoBehaviour
 
 
     }
+
+    public void StartBoulder()
+    {
+        rb.useGravity = true;
+    }
+
     public void Grow() 
     {
         //do scale
