@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: f2db589d2cef0e448b5e22b2e54b768d
+guid: 1e4edd48a3dcb3e45af6b895643e5783
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2487101647053186395
-    second: BigBoy_0
+      213: -6695950386315148514
+    second: BG_0
   - first:
-      213: -6892640289633176204
-    second: BigBoy_1
-  - first:
-      213: 8019037817245171022
-    second: BigBoy_2
+      213: -7917263021958980417
+    second: BG_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,10 +49,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -148,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigBoy_0
+      name: BG_0
       rect:
         serializedVersion: 2
-        x: 207
-        y: 158
-        width: 455
-        height: 512
+        x: 27
+        y: 0
+        width: 1194
+        height: 792
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b55e4e055c5f38220800000000000000
-      internalID: 2487101647053186395
+      spriteID: e13cb0ea9943313a0800000000000000
+      internalID: -6695950386315148514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigBoy_1
+      name: BG_1
       rect:
         serializedVersion: 2
-        x: 715
-        y: 158
-        width: 464
-        height: 511
+        x: 1266
+        y: 0
+        width: 616
+        height: 617
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,29 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4757ed3ec2c6850a0800000000000000
-      internalID: -6892640289633176204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BigBoy_2
-      rect:
-        serializedVersion: 2
-        x: 1285
-        y: 162
-        width: 410
-        height: 573
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4d72597868594f60800000000000000
-      internalID: 8019037817245171022
+      spriteID: fbc9cce9a3b302290800000000000000
+      internalID: -7917263021958980417
       vertices: []
       indices: 
       edges: []
@@ -213,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 8d2351849a774c5498520fdb5465ccbd
     internalID: 0
     vertices: []
     indices: 

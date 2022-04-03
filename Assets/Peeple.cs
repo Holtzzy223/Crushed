@@ -11,6 +11,7 @@ public class Peeple : MonoBehaviour
     [SerializeField] private float speedMax = 0;
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private SpriteRenderer myRenderer;
+    [SerializeField] private GameObject mySoul;
     void Start()
     {
         
@@ -63,6 +64,7 @@ public class Peeple : MonoBehaviour
         }
         FindObjectOfType<PeepleManager>().RemovePeeple();
         FindObjectOfType<Boulder>().Grow();
+        Instantiate(mySoul, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     private IEnumerator Scream() 

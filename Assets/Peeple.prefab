@@ -136,6 +136,7 @@ MonoBehaviour:
   - {fileID: 8118189200590125182, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
   - {fileID: -2524129400279493232, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
   myRenderer: {fileID: 8207845556613934703}
+  mySoul: {fileID: 3739152152139044297, guid: 6d4df761cb73195429fb357bec6a4f27, type: 3}
 --- !u!1 &6993158848435175768
 GameObject:
   m_ObjectHideFlags: 0

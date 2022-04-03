@@ -95,10 +95,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.21524447
-  m_Height: 1.6593506
+  m_Radius: 0.4033635
+  m_Height: 2.0860507
   m_Direction: 1
-  m_Center: {x: -0.051978946, y: 0.027726531, z: -0.012000442}
+  m_Center: {x: -0.024933875, y: 0.038530946, z: -0.012000442}
 --- !u!54 &1838429719901043536
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -132,10 +132,11 @@ MonoBehaviour:
   speed: 0
   speedMax: 0
   sprites:
-  - {fileID: 945141788407419588, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
-  - {fileID: 8118189200590125182, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
-  - {fileID: -2524129400279493232, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
+  - {fileID: -6892640289633176204, guid: f2db589d2cef0e448b5e22b2e54b768d, type: 3}
+  - {fileID: 2487101647053186395, guid: f2db589d2cef0e448b5e22b2e54b768d, type: 3}
+  - {fileID: 8019037817245171022, guid: f2db589d2cef0e448b5e22b2e54b768d, type: 3}
   myRenderer: {fileID: 8207845556613934703}
+  mySoul: {fileID: 3739152152139044297, guid: 6d4df761cb73195429fb357bec6a4f27, type: 3}
 --- !u!1 &6993158848435175768
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 945141788407419588, guid: 7eefc6c63c46fb44b8c12426e3bd5951, type: 3}
+  m_Sprite: {fileID: -6892640289633176204, guid: f2db589d2cef0e448b5e22b2e54b768d, type: 3}
   m_Color: {r: 0, g: 0.8585174, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
