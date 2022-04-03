@@ -42,9 +42,25 @@ public class Peeple : MonoBehaviour
             }
         }
     }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Boulder"))
+        {
+            killTimer = 0;
+            myRenderer.sprite = sprites[0];
+        }
+    }
 
     private void KillPeeple()
     {
+        if (tag == "peeple")
+        {
+            SoulManager.instance.AddSoul(1);
+        }
+        else 
+        {
+            SoulManager.instance.AddSoul(3);
+        }
         FindObjectOfType<PeepleManager>().RemovePeeple();
         FindObjectOfType<Boulder>().Grow();
         Destroy(gameObject);

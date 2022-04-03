@@ -83,7 +83,7 @@ public class Boulder : MonoBehaviour
         //do scale
         transform.DOScale(transform.localScale*scaleMod, growTime);
         //scale rigidbody mass
-        rb.mass = rb.mass +7;
+        rb.mass = rb.mass + 7;
         //scale down drag
         rb.drag = rb.drag / scaleMod;
 

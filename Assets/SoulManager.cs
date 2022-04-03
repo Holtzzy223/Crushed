@@ -9,7 +9,7 @@ public class SoulManager : MonoBehaviour
     [SerializeField] private int waitTime;
     private int soulCount = 30;
     private int maxSoulCount = 100;
-    public int SoulCount { get { return soulCount; } }
+    public int SoulCount { get { return soulCount; } set { soulCount = value; } }
     public int MaxSoulCount { get { return maxSoulCount; } }      
     private void Awake()
     {
@@ -32,12 +32,12 @@ public class SoulManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Curretn Souls: " +soulCount);
+        Debug.Log("Current Souls: " +soulCount);
     }
     //add souls
     public void AddSoul(int amount)
     {
-        soulCount += amount;
+        SoulCount += amount;
         if (soulCount > maxSoulCount)
         {
             soulCount = maxSoulCount;
@@ -58,7 +58,7 @@ public class SoulManager : MonoBehaviour
         while (true)
         {
             
-            Debug.Log("adding souls..");
+            Debug.Log("adding souls in "+waitTime+" seconds...");
             yield return new WaitForSeconds(waitTime);
             AddSoul(amount);
             Debug.Log("Souls Added..");
