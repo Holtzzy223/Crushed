@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: d076453413b9e2e4dbb453f51c2167cf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5496529426297336875
+    second: blood decal_0
+  - first:
+      213: -4069523344022571918
+    second: blood decal_1
+  - first:
+      213: -6940080900036637484
+    second: blood decal_2
+  - first:
+      213: -6014547824851912379
+    second: blood decal_3
+  - first:
+      213: -5706875153112928721
+    second: blood decal_4
+  - first:
+      213: 1976356794279097285
+    second: blood decal_5
+  - first:
+      213: -8338041533020347450
+    second: blood decal_6
+  - first:
+      213: -2337469552375375936
+    second: blood decal_7
+  - first:
+      213: 3523665017828395325
+    second: blood decal_8
+  - first:
+      213: -3239662080941161681
+    second: blood decal_9
+  - first:
+      213: 5365040199235945320
+    second: blood decal_10
+  - first:
+      213: -5032984195635587554
+    second: blood decal_11
+  - first:
+      213: 1623970590538161254
+    second: blood decal_12
+  - first:
+      213: -9047301764931609998
+    second: blood decal_13
+  - first:
+      213: 2166513012692950339
+    second: blood decal_14
+  - first:
+      213: -7015918971208830900
+    second: blood decal_15
+  - first:
+      213: -2148709888632969366
+    second: blood decal_16
+  - first:
+      213: -7506863942456408398
+    second: blood decal_17
+  - first:
+      213: 3472119418481606132
+    second: blood decal_18
+  - first:
+      213: 1879576471340410258
+    second: blood decal_19
+  - first:
+      213: -4983633756867837618
+    second: blood decal_20
+  - first:
+      213: 3736957094597488198
+    second: blood decal_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +107,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -137,7 +203,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blood decal_0
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 799
+        width: 155
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b243fef2468974c40800000000000000
+      internalID: 5496529426297336875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_1
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 919
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ff5274162687c0800000000000000
+      internalID: -4069523344022571918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_2
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 931
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcc7d80131efaf90800000000000000
+      internalID: -6940080900036637484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_3
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 919
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5497a17ae98088ca0800000000000000
+      internalID: -6014547824851912379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_4
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 896
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e6339d84b1dc0b0800000000000000
+      internalID: -5706875153112928721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_5
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 887
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c37f60880e6d6b10800000000000000
+      internalID: 1976356794279097285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 878
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c36edd0763594c80800000000000000
+      internalID: -8338041533020347450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_7
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 792
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7df5993d3af8fd0800000000000000
+      internalID: -2337469552375375936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_8
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 818
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39c12f1aa296e030800000000000000
+      internalID: 3523665017828395325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_9
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 843
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23033970886a03d0800000000000000
+      internalID: -3239662080941161681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_10
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 831
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634621d2a3747a40800000000000000
+      internalID: 5365040199235945320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_11
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 666
+        width: 87
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e165cfa3a8f372ab0800000000000000
+      internalID: -5032984195635587554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_12
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 819
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c55bed5a0898610800000000000000
+      internalID: 1623970590538161254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_13
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 793
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a9c7dbaf6817280800000000000000
+      internalID: -9047301764931609998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_14
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 677
+        width: 99
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d13da3b10011e10800000000000000
+      internalID: 2166513012692950339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_15
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 803
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c407c2c1ed272ae90800000000000000
+      internalID: -7015918971208830900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_16
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 795
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67a9aa9dbf3e22e0800000000000000
+      internalID: -2148709888632969366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_17
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 774
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b682b4740342d790800000000000000
+      internalID: -7506863942456408398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_18
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 756
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdf45c07327f2030800000000000000
+      internalID: 3472119418481606132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_19
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 494
+        width: 86
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2956d6e97d8951a10800000000000000
+      internalID: 1879576471340410258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_20
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 658
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e414f37a08396dab0800000000000000
+      internalID: -4983633756867837618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood decal_21
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 229
+        width: 121
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64eeb54ada65cd330800000000000000
+      internalID: 3736957094597488198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
