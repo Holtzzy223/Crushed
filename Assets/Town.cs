@@ -19,8 +19,21 @@ public class Town : MonoBehaviour
     //check trigger for boulder
     private void OnTriggerStay(Collider other)
     {
+        //GameOver
         if (other.gameObject.CompareTag("Boulder"))
         {
+            if (PlayerPrefs.HasKey("HighScore"))
+            {
+                if (PlayerPrefs.GetInt("HighScore") < GameManager.instance.gameScore)
+                {
+                    PlayerPrefs.SetInt("HighScore", GameManager.instance.gameScore);
+                }
+            }
+            else
+            {
+                PlayerPrefs.SetInt("HighScore", GameManager.instance.gameScore);
+            }
+            UIManager.instance.InitGameOver();
             GameManager.instance.PauseGame();
         }
     }

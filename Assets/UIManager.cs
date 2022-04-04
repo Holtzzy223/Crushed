@@ -13,15 +13,20 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public GameObject peepleTut;
     public GameObject peepleTut2;
-    
     public GameObject bigBoyTut;
     public GameObject townTut;
     public GameObject townTut2;
     public GameObject boulderTut;
     public GameObject boulderTut2;
+    //Gameover
+    public GameObject gameOver;
+    
+    public TextMeshProUGUI gameOverScore;
+    public TextMeshProUGUI gameOverHighScore;
+
+    //singleton
     public static UIManager instance;
     
-    //singleton
     private void Awake()
     {
         if (instance == null)
@@ -163,4 +168,19 @@ public class UIManager : MonoBehaviour
         EnablePeepleTut();
     }
 
+    //enable gameover
+    public void EnableGameOver()
+    {
+        gameOver.SetActive(true);
+    }
+    public void InitGameOver()
+    {
+        EnableGameOver();
+        gameOverScore.text = GameManager.instance.gameScore.ToString();
+        gameOverHighScore.text = PlayerPrefs.GetInt("HighScore").ToString();
+    }
+    public void RestartGame() 
+    {
+        HoltzzyHelper.Helpers.ReloadScene();
+    }
 }

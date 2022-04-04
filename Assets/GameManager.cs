@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     }
     public GameState state;
     public static GameManager instance;
-    public int gameScore;
+    public int gameScore =0;
+    public int highScore;
 
     private void Awake()
     {
@@ -31,7 +32,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ResetTimeScale();
     }
 
     // Update is called once per frame

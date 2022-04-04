@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killTimer: 0
-  killTimerMax: 1.5
+  killTimerMax: 2.5
   speed: 0
   speedMax: 0
   sprites:
