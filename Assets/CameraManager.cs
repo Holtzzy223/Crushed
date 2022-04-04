@@ -70,13 +70,13 @@ public class CameraManager : MonoBehaviour
    
     public IEnumerator TargetBoulder()
     {
+        GameManager.instance.state = GameManager.GameState.Paused;
         vCam.Follow = null;
         vCam.LookAt = null;
         vCam.transform.DOMove(new Vector3(boulderTarget.transform.position.x, boulderTarget.transform.position.y, -10), 10f);
         yield return new WaitForSeconds(10f);
         vCam.Follow = boulderTarget.transform;
         vCam.LookAt = boulderTarget.transform;
-        yield return new WaitForSeconds(1f);
         while (vCam.m_Lens.OrthographicSize > 1f)
         {
             ZoomVirtualCam(0.99f);

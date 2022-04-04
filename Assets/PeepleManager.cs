@@ -11,7 +11,10 @@ public class PeepleManager : MonoBehaviour
     [SerializeField]private GameObject bigBoyPre;
     [SerializeField]private int peepleCost = 2;
     [SerializeField]private int bigBoyCost = 5;
-    
+    [SerializeField] private List<AudioClip> popClips = new List<AudioClip>();
+   
+    [SerializeField] private AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,7 @@ public class PeepleManager : MonoBehaviour
                 if (SoulManager.instance.SoulCount >= peepleCost)
                 {
                     AddPeeple(peeplePre, peepleCost);
+                    
                 }
             }
             //check right mouse
@@ -47,6 +51,8 @@ public class PeepleManager : MonoBehaviour
         if (peepleCount < maxPeeple)
         {
              //create a new peeple
+            audioSource.clip = popClips[UnityEngine.Random.Range(0, popClips.Count)];
+            audioSource.Play();
             GameObject newPeeple = Instantiate(prefab);
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 10;

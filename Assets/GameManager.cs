@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
         GameOver
     }
     public GameState state;
+    public AudioClip music;
+    public AudioSource musicSource;
     public static GameManager instance;
     public int gameScore =0;
     public int highScore;
@@ -33,6 +35,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ResetTimeScale();
+        //play music
+        musicSource.clip = music;
+        musicSource.Play();
     }
 
     // Update is called once per frame

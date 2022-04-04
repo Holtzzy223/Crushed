@@ -12,9 +12,11 @@ public class Peeple : MonoBehaviour
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private SpriteRenderer myRenderer;
     [SerializeField] private GameObject mySoul;
+    [SerializeField] private List<AudioClip> screamClips = new List<AudioClip>();
+    [SerializeField] private AudioSource myAudioSource;
     void Start()
     {
-        
+        myAudioSource.clip = screamClips[UnityEngine.Random.Range(0, screamClips.Count)];
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class Peeple : MonoBehaviour
 
     private void KillPeeple()
     {
+
         if (tag == "peeple")
         {
             SoulManager.instance.AddSoul(1);
@@ -65,11 +68,16 @@ public class Peeple : MonoBehaviour
         FindObjectOfType<PeepleManager>().RemovePeeple();
         FindObjectOfType<Boulder>().Grow();
         Instantiate(mySoul, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        
+       Destroy(gameObject);
+    }
+    private void PlayScream() 
+    {
     }
     private IEnumerator Scream() 
     {
         myRenderer.sprite = sprites[2];
+
         yield return new WaitForSeconds(0.35f);
         KillPeeple();
     }
