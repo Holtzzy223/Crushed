@@ -107,6 +107,8 @@ public class UIManager : MonoBehaviour
     {
         GameManager.instance.ResetTimeScale();
         DisableBoulderTut2();
+        //finish tut
+        PlayerPrefs.SetInt("FirstTime", 1);        
         FindObjectOfType<Boulder>().StartBoulder();
     }
     public void EnableTownTut()

@@ -53,9 +53,19 @@ public class CameraManager : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
 
-        //pause
-        GameManager.instance.PauseGame();
-        UIManager.instance.EnableTownTut();
+        //pause and tut if first time
+        if(PlayerPrefs.GetInt("FirstTime") == 0)
+        {
+            //Load tutorial
+            GameManager.instance.PauseGame();
+            UIManager.instance.EnableTownTut();
+        }
+        else
+        {
+            StartCoroutine(TargetBoulder());
+        }        
+       
+
     }
    
     public IEnumerator TargetBoulder()
