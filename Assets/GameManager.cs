@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     }
     public GameState state;
     public static GameManager instance;
+    public int gameScore;
+
     private void Awake()
     {
         if (instance == null)
@@ -55,5 +58,21 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0.5f;
     }
-    
+
+    public IEnumerator AddScoreOverTime(int amount, float waitTime)
+    {
+        while (true)
+        {
+
+            Debug.Log("adding souls in " + waitTime + " seconds...");
+            yield return new WaitForSeconds(waitTime);
+            AddScore(amount);
+
+        }
+    }
+
+    private void AddScore(int amount)
+    {
+        gameScore += amount;
+    }
 }

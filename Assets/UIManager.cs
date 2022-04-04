@@ -10,6 +10,7 @@ using System;
 public class UIManager : MonoBehaviour
 { 
     public TextMeshProUGUI soulText;
+    public TextMeshProUGUI scoreText;
     public GameObject peepleTut;
     public GameObject peepleTut2;
     
@@ -42,6 +43,12 @@ public class UIManager : MonoBehaviour
     void LateUpdate()
     {
         UpdateSouls();
+        UpdateScore();
+    }
+
+    private void UpdateScore()
+    {
+        scoreText.text = GameManager.instance.gameScore.ToString();
     }
 
     public void UpdateSouls() 
@@ -127,6 +134,7 @@ public class UIManager : MonoBehaviour
         //finish tut
         PlayerPrefs.SetInt("FirstTime", 1);        
         FindObjectOfType<Boulder>().StartBoulder();
+        GameManager.instance.StartCoroutine(GameManager.instance.AddScoreOverTime(10,1));
     }
     public void EnableTownTut()
     {
