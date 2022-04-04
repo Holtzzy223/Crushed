@@ -17,11 +17,11 @@ public class Town : MonoBehaviour
    
     }
     //check trigger for boulder
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Boulder"))
         {
-        Helpers.ReloadScene(); 
+            GameManager.instance.PauseGame();
         }
     }
 }
