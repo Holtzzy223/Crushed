@@ -76,7 +76,11 @@ public class Boulder : MonoBehaviour
             cm.ZoomVirtualCam(1 + transform.localScale.x / 2);
         }
 
-        //i fucking love you copilot
+        
+        if(rb.velocity.magnitude == 0 && rb.useGravity== true)
+        {
+            rb.velocity = new Vector3(1, 0, 0);
+        }
         
     }
 

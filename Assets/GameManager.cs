@@ -76,4 +76,19 @@ public class GameManager : MonoBehaviour
     {
         gameScore += amount;
     }
+    //check fro escape press
+    public void CheckForEscapePress()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (state == GameState.Paused)
+            {
+                ResetTimeScale();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+    }
 }
