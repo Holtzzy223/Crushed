@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
 { 
     public TextMeshProUGUI soulText;
     public GameObject peepleTut;
+    public GameObject peepleTut2;
+    
     public GameObject bigBoyTut;
     public GameObject townTut;
     public GameObject townTut2;
@@ -57,7 +59,17 @@ public class UIManager : MonoBehaviour
     {
         peepleTut.SetActive(false);
     }
-   
+    public void EnablePeepleTut2()
+    {
+        peepleTut2.SetActive(true);
+    }
+    //disable peepletut2
+    public void DisablePeepleTut2()
+    {
+        peepleTut2.SetActive(false);
+    }
+
+
     public void EnableBigBoyTut()
     {
         bigBoyTut.SetActive(true);
@@ -71,8 +83,13 @@ public class UIManager : MonoBehaviour
     {
 
             DisablePeepleTut();
-            EnableBigBoyTut();
+            EnablePeepleTut2();
 
+    }
+    public void NextBigTut()
+    {
+        DisablePeepleTut2();
+        EnableBigBoyTut();
     }
     public void EndPeepleTut()
     {
