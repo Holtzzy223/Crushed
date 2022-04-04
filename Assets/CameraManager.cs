@@ -11,9 +11,18 @@ public class CameraManager : MonoBehaviour
     public CinemachineVirtualCamera vCam;
     public GameObject townTarget;
     public GameObject boulderTarget;
-
-    void Awake() 
+    //singleton
+    public static CameraManager instance;
+    private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         vCam.m_Lens.OrthographicSize = 1f;
     }
     void Start()
@@ -43,11 +52,13 @@ public class CameraManager : MonoBehaviour
             ZoomVirtualCam(2.3f);
             yield return new WaitForEndOfFrame();
         }
-        yield return new WaitForSeconds(wait);
-        StartCoroutine(TargetBoulder());
-    }
 
-    private IEnumerator TargetBoulder()
+        //pause
+        GameManager.instance.PauseGame();
+        UIManager.instance.EnablePeepleTut();
+    }
+   
+    public IEnumerator TargetBoulder()
     {
         vCam.Follow = null;
         vCam.LookAt = null;

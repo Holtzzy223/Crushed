@@ -11,6 +11,7 @@ public class PeepleManager : MonoBehaviour
     [SerializeField]private GameObject bigBoyPre;
     [SerializeField]private int peepleCost = 2;
     [SerializeField]private int bigBoyCost = 5;
+    
 
     // Start is called before the first frame update
     void Start()
