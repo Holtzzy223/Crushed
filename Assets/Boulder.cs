@@ -76,7 +76,8 @@ public class Boulder : MonoBehaviour
             cm.ZoomVirtualCam(1 + transform.localScale.x / 2);
         }
 
-
+        //i fucking love you copilot
+        
     }
 
     public void StartBoulder()

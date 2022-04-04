@@ -55,7 +55,7 @@ public class CameraManager : MonoBehaviour
 
         //pause
         GameManager.instance.PauseGame();
-        UIManager.instance.EnablePeepleTut();
+        UIManager.instance.EnableTownTut();
     }
    
     public IEnumerator TargetBoulder()
@@ -72,6 +72,7 @@ public class CameraManager : MonoBehaviour
             ZoomVirtualCam(0.99f);
             yield return new WaitForEndOfFrame();
         }
-        boulderTarget.GetComponent<Boulder>().StartBoulder();
+        GameManager.instance.PauseGame();
+        UIManager.instance.EnableBoulderTut();
     }
 }

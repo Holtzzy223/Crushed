@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //Game State enum
+    public enum GameState
+    {
+        Menu,
+        Playing,
+        Paused,
+        GameOver
+    }
+    public GameState state;
     public static GameManager instance;
-    //singleton
     private void Awake()
     {
         if (instance == null)
@@ -33,12 +41,14 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
+        state = GameState.Paused;
     }
 
     //unpause game
     public void ResetTimeScale()
     {
         Time.timeScale = 1;
+        state = GameState.Playing;
     }
     //slowmotion
     public void SlowMotion()

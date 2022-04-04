@@ -22,23 +22,25 @@ public class PeepleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //check if mouse button clicked
-        if (Input.GetMouseButtonDown(0))
+        if (GameManager.instance.state == GameManager.GameState.Playing)
         {
-            if (SoulManager.instance.SoulCount >= peepleCost)
+            //check if mouse button clicked
+            if (Input.GetMouseButtonDown(0))
             {
-                AddPeeple(peeplePre, peepleCost);
+                if (SoulManager.instance.SoulCount >= peepleCost)
+                {
+                    AddPeeple(peeplePre, peepleCost);
+                }
+            }
+            //check right mouse
+            if (Input.GetMouseButtonDown(1))
+            {
+                if (SoulManager.instance.SoulCount >= bigBoyCost)
+                {
+                    AddPeeple(bigBoyPre, bigBoyCost);
+                }
             }
         }
-        //check right mouse
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (SoulManager.instance.SoulCount >= bigBoyCost)
-            {
-                AddPeeple(bigBoyPre, bigBoyCost);
-            }
-        }
-
     }
     void AddPeeple(GameObject prefab,int cost)
     {
